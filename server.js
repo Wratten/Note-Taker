@@ -17,7 +17,6 @@ app.use(webRoutes);
 app.use("/api", apiRoutes);
 
 app.get("*", (req, res) => {
-  console.log("aaaa");
   const html404 = path.join(__dirname, "public", "404.html");
   res.sendFile(html404);
 });
